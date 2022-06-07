@@ -65,7 +65,7 @@ public class BaseClass {
    
 		
 	public  static void loaddata() throws IOException {
-		FileInputStream fis=new FileInputStream(currDir+"\\src\\test\\resources\\Config\\applicationProperties");
+		FileInputStream fis=new FileInputStream(currDir+"//src//test//resources//Config//applicationProperties");
 		config=new Properties();
 		config.load(fis);
 	}
