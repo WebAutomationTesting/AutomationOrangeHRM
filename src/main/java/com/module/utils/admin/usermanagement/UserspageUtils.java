@@ -36,7 +36,7 @@ public class UserspageUtils extends BaseClass {
 		seleniumUtills.entertext(userspageObjects.employeeName,empName);
 	}
 	
-	public void selectstatus() {
+	public void selectStatus() {
 		seleniumUtills.clickOnElement(userspageObjects.status);
 	}
 	
@@ -60,7 +60,7 @@ public class UserspageUtils extends BaseClass {
 		seleniumUtills.entertext(userspageObjects.employeename,empName);
 	}
 	
-	public void enterUsername(String userName ) {
+	public void enterDetailsUserName(String userName ) {
 		seleniumUtills.entertext(userspageObjects.userName,userName);
 	}
 	
