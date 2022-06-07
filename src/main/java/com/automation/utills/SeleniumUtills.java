@@ -18,8 +18,8 @@ public class SeleniumUtills extends BaseClass {
 		locator.click();
 	}
 	
-	public void selectvisubleText(String locator,String value) {
-		Select select=new Select(driver.findElement(By.xpath(locator)));
+	public void selectvisubleText(WebElement locator,String value) {
+		Select select=new Select(locator);
 		select.selectByVisibleText(value);
 		
 	}
