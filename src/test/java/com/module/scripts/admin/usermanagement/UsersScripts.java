@@ -32,14 +32,14 @@ public class UsersScripts extends BaseClass {
 		userspageUtils.selectUserRole();
 		userspageUtils.selectUserAdmin();
 		userspageUtils.enterEmployeeName("yedukondaluNarsing");
-		userspageUtils.selectstatus();
+		userspageUtils.selectStatus();
 		userspageUtils.selectEnabled();
 		userspageUtils.clickOnSearch();
 		userspageUtils.clickOnAdd();
 		userspageUtils.selectuserRoleSearch();
 		userspageUtils.selectUserAdmin();
 		userspageUtils.enterEmployeename("yedukondalu narsing");
-		userspageUtils.enterUsername("yedu7999");
+		userspageUtils.enterDetailsUserName("yedu7999");
 		userspageUtils.clickOnStatusName();
 		userspageUtils.selectEnabled();
 		userspageUtils.enterPassword("9553472881");
