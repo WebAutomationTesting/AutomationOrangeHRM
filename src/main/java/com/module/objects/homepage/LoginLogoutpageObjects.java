@@ -22,5 +22,16 @@ public class LoginLogoutpageObjects {
 	
 	@FindBy(xpath = "//a[text()='Users']")
 	public WebElement user;
+	
+	@FindBy(xpath = "//a[@id='welcome']")
+	public WebElement tologout;
+	
+	@FindBy(xpath = "//a[text()='Logout']")
+	public WebElement logout;
+
 
 }
+
+
+
+
