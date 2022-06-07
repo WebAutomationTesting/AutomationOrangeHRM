@@ -23,17 +23,14 @@ public class HolidaysScripts extends BaseClass{
 	}
 	
 	@Test
-	
 	public void LoginCredentails() {
 		loginLogoutpageUtils.applicationURL("Admin", "admin123");
 		holidaysUtils.selectLeave();
 		holidaysUtils.selectConfigure();
 		holidaysUtils.selectHolidays();
-		holidaysUtils.enterFrom("01-01-2022");
-		holidaysUtils.enterTo("31-12-2022");
-		holidaysUtils.selectSearch();
-		
-				
+		holidaysUtils.enterFrom("2022-01-01");
+		holidaysUtils.enterTo("2022-05-01");
+		holidaysUtils.selectSearch();			
 	}
 
 }
