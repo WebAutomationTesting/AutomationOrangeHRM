@@ -36,12 +36,48 @@ public class UserspageUtils extends BaseClass {
 		seleniumUtills.entertext(userspageObjects.employeeName,empName);
 	}
 	
-	public void seclectstatus() {
+	public void selectstatus() {
 		seleniumUtills.clickOnElement(userspageObjects.status);
 	}
 	
-	public void enterEnabled(String enabled) {
-		seleniumUtills.entertext(userspageObjects.enabled,enabled);
+	public void selectEnabled() {
+		seleniumUtills.clickOnElement(userspageObjects.enabled);
+	}
+	
+	public void clickOnSearch() {
+		seleniumUtills.clickOnElement(userspageObjects.search);
+	}
+	
+	public void clickOnAdd() {
+		seleniumUtills.clickOnElement(userspageObjects.add);
+	}
+	
+	public void selectuserRoleSearch() {
+		seleniumUtills.clickOnElement(userspageObjects.userroleSearch);
+	}
+	
+	public void enterEmployeename(String empName ) {
+		seleniumUtills.entertext(userspageObjects.employeename,empName);
+	}
+	
+	public void enterUsername(String userName ) {
+		seleniumUtills.entertext(userspageObjects.userName,userName);
+	}
+	
+	public void clickOnStatusName() {
+		seleniumUtills.clickOnElement(userspageObjects.statusName);
+	}
+	
+	public void enterPassword(String password ) {
+		seleniumUtills.entertext(userspageObjects.password,password);
+	}
+	
+	public void enterConfirmPassword(String confirmPassword) {
+		seleniumUtills.entertext(userspageObjects.confirmPassword,confirmPassword);
+	}
+	
+	public void clickOnSave() {
+		seleniumUtills.clickOnElement(userspageObjects.save);
 	}
 	
 
