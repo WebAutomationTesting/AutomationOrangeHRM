@@ -19,19 +19,32 @@ public class UsersScripts extends BaseClass {
 	public void load() {
 		userspageUtils=PageFactory.initElements(driver,UserspageUtils.class);
 		loginLogoutpageObject=PageFactory.initElements(driver,LoginLogoutpageObjects.class);	
-		loginLogoutpageUtils=PageFactory.initElements(driver, LoginLogoutpageUtils.class);
+		loginLogoutpageUtils=PageFactory.initElements(driver,LoginLogoutpageUtils.class);
 	}
 
 	@Test
-	public void logindetails() {
+	public void logindetails() throws InterruptedException {
 		loginLogoutpageUtils.applicationURL("Admin","admin123");
+		loginLogoutpageUtils.clickOnAdmin();
+		loginLogoutpageUtils.clickOnUsermanagement();
+		loginLogoutpageUtils.clickOnUser();
 		userspageUtils.enterUserName("yedu");
 		userspageUtils.selectUserRole();
 		userspageUtils.selectUserAdmin();
 		userspageUtils.enterEmployeeName("yedukondaluNarsing");
-		userspageUtils.seclectstatus();
-		userspageUtils.enterEnabled("enabled");
+		userspageUtils.selectstatus();
+		userspageUtils.selectEnabled();
+		userspageUtils.clickOnSearch();
+		userspageUtils.clickOnAdd();
+		userspageUtils.selectuserRoleSearch();
+		userspageUtils.selectUserAdmin();
+		userspageUtils.enterEmployeename("yedukondalu narsing");
+		userspageUtils.enterUsername("yedu7999");
+		userspageUtils.clickOnStatusName();
+		userspageUtils.selectEnabled();
+		userspageUtils.enterPassword("9553472881");
+		userspageUtils.enterConfirmPassword("9553472881");
+		userspageUtils.clickOnSave();
 	}
-
 
 }
