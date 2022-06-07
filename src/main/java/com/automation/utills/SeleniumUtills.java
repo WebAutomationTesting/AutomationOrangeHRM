@@ -9,6 +9,7 @@ import com.automation.base.BaseClass;
 public class SeleniumUtills extends BaseClass {
 	
 	public void entertext(WebElement locator,String value) {
+		locator.clear();
 		locator.sendKeys(value);
 		
 	}
