@@ -18,7 +18,7 @@ public class EmployeeTrackersScripts extends BaseClass{
 	
 	@Test
 	public void logincredentials() {
-		employeeTrackersUtils.applications("Admin", "admin123");
+		//employeeTrackersUtils.applications("Admin", "admin123");
 	}
 	
 
