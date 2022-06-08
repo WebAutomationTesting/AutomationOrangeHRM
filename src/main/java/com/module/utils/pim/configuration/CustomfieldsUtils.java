@@ -36,7 +36,28 @@ public class CustomfieldsUtils extends BaseClass {
 	public void enterFrom(String from) {
 		seleniumUtills.entertext(customfieldsObjects.enter, from);
 	}
+	public void selectdropdown( ) {
+		seleniumUtills.clickOnElement(customfieldsObjects.screen);
+	}
+	public void selectjob() {
+		seleniumUtills.clickOnElement(customfieldsObjects.job);
+	}
+	public void selectddown() {
+		seleniumUtills.clickOnElement(customfieldsObjects.type);
+	}
+	public void selectdrdown() {
+		seleniumUtills.clickOnElement(customfieldsObjects.drop);
+	}
+	public void enteroption(String name) {
+		seleniumUtills.entertext(customfieldsObjects.text, name);
+	}
 	
+
+	public void save() {
+		seleniumUtills.clickOnElement(customfieldsObjects.save);
+	}
+
+
 
 
 
