@@ -10,11 +10,11 @@ import com.module.utils.admin.job.PayGradesutils;
 import com.module.utils.homepage.LoginLogoutpageUtils;
 
 public class PayGradesScripts extends BaseClass{
-	
+
 	PayGradesutils payGradesutils;
 	LoginLogoutpageObjects loginLogoutpageObject;
 	LoginLogoutpageUtils  loginLogoutpageUtils;
-	
+
 	@BeforeClass
 	public void load() {
 		payGradesutils=PageFactory.initElements(driver,PayGradesutils.class);
@@ -29,7 +29,12 @@ public class PayGradesScripts extends BaseClass{
 		payGradesutils.clickOnJob();
 		payGradesutils.clickOnPayGrades();
 		payGradesutils.clickOnADD();
-		payGradesutils.enterName("HRM");
+		payGradesutils.enterName("YEDU");
+		payGradesutils.clickOnSave();
+		payGradesutils.clickOnADD();
+		payGradesutils.enterCurrency("INR - Indian Rupee");
+		payGradesutils.enterMaxSalary("10000");
+		payGradesutils.enterMinSalary("10000");
 		payGradesutils.clickOnSave();
 	}
 
