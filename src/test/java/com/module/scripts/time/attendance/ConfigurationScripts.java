@@ -19,7 +19,7 @@ public class ConfigurationScripts extends BaseClass{
 	@Test
 	
 public void timeattendance() {
-	loginLogoutpageUtils.applicationURL("Admin","admin123");
+	loginLogoutpageUtils.applicationCredentials("Admin","admin123");
 	configurationUtils.clickontime();
 	configurationUtils.clickonattendence();
 	configurationUtils.clickonconfiguration();
