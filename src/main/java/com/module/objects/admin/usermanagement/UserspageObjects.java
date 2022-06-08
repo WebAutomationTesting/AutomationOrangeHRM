@@ -50,5 +50,31 @@ public class UserspageObjects {
 	@FindBy(xpath = "//input[@value='Save']")
 	public WebElement save;
 	
+	@FindBy(id = "menu_admin_viewAdminModule")
+	public WebElement adminHeader;
+	
+	@FindBy(id = "menu_admin_UserManagement")
+	public WebElement userManagementMenu;
+	
+	@FindBy(id = "menu_admin_viewSystemUsers")
+	public WebElement usersMenu;
+	
+	@FindBy(xpath="//li[@class='ac_even ac_over']")
+	public WebElement selectUser;
+	
+	@FindBy(id="searchSystemUser_userName")
+	public WebElement searchUsername;
+	
+	@FindBy(id="searchBtn")
+	public WebElement searchButton;
+	
+	@FindBy(id="ohrmList_chkSelectRecord_64")
+	public WebElement firstReocrd;
+	
+	@FindBy(id="btnDelete")
+	public WebElement deleteButton;
+	
+	
+	
 	
 }
