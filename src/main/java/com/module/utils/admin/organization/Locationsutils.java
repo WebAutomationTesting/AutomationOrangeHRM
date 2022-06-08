@@ -1,38 +1,52 @@
 package com.module.utils.admin.organization;
 
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v85.debugger.model.Location;
 import org.openqa.selenium.support.PageFactory;
 
 import com.automation.base.BaseClass;
 import com.automation.utills.SeleniumCore;
 import com.automation.utills.SeleniumUtills;
+import com.module.objects.admin.configuration.LocalizationObjects;
+import com.module.objects.admin.organization.LocationsObjects;
 
 public class Locationsutils  extends BaseClass{
-	private static final WebElement username = null;
-	private static final WebElement password = null;
 	SeleniumCore seleniumCore;
 	SeleniumUtills seleniumUtills;
-	Locationsutils locationsutils;
+	LocationsObjects locationobjects;
 	
 	public Locationsutils( ) {
 		seleniumCore=PageFactory.initElements(driver, SeleniumCore.class);
 		seleniumUtills=PageFactory.initElements(driver, SeleniumUtills.class);
-		locationsutils=PageFactory.initElements(driver, Locationsutils.class);
+		locationobjects=PageFactory.initElements(driver, LocationsObjects.class);
+	}
+	public void selectAdmin() {
+		seleniumUtills.clickOnElement(locationobjects.Admin);
+	}
+	public void selectorganization() {
+		seleniumUtills.clickOnElement(locationobjects.Organization);
+	}
+	public void selectlocation() { 
+		seleniumUtills.clickOnElement(locationobjects.location);
+	}
+	public void entername(String name) {
+		seleniumUtills.entertext(locationobjects.name, currDir);	
 	}
 	
-	public void applicationlogin(String username,String password) {
-		
+	public void entercity(String city) {
+		seleniumUtills.entertext(locationobjects.city, currDir);
 	}
- public void enterusername(String username) {
-	 seleniumUtills.entertext(locationsutils.username, username);
-	 
- }
- public void enterpassword(String password) {
-	 seleniumUtills.entertext(locationsutils.password, password);
- }
- public void clickonelement() {
+	public void selectcountry() {
+		seleniumUtills.clickOnElement(locationobjects.country);
+	}
+	public void selectad() {
+		seleniumUtills.clickOnElement(locationobjects.ad);
+	}
 	
- }
+	
+	
+
+	
+	
  
 	
 
