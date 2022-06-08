@@ -1,6 +1,5 @@
 package com.automation.utills;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -18,10 +17,16 @@ public class SeleniumUtills extends BaseClass {
 		locator.click();
 	}
 	
-	public void selectvisubleText(WebElement locator,String value) {
-		Select select=new Select(locator);
+	public void selectvisubleText(WebElement element,String value) {
+		Select select=new Select(element);
 		select.selectByVisibleText(value);
-		
 	}
+	
+	public void selectIndexText(WebElement element,int value) {
+		Select select=new Select(element);
+		select.selectByIndex(value);
+	}
+	
+	
 
 }
