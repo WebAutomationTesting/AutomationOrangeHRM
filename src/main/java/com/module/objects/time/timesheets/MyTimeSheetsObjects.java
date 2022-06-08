@@ -31,7 +31,10 @@ public class MyTimeSheetsObjects {
 
 	@FindBy(xpath ="(//input[@class=' timeBox'])[1]")
 	public WebElement currentdate;
-
+	
+	@FindBy(xpath = "//input[@name='initialRows[0][2]']")
+    public WebElement wednesday;
+	
 	@FindBy(xpath = "//input[@id='submitSave']")
 	public WebElement save;
 
