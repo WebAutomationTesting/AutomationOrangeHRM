@@ -11,24 +11,31 @@ import com.module.utils.pim.configuration.CustomfieldsUtils;
 
 
 public class CustomFieldsScripts extends BaseClass {
-	
+
 	CustomfieldsUtils customfieldsUtils;
 	LoginLogoutpageObjects loginLogoutpageObjects;
 	LoginLogoutpageUtils loginLogoutpageUtils;
-	
+
 	@BeforeClass
-	
 	public void data() {
 		customfieldsUtils=PageFactory.initElements(driver,CustomfieldsUtils.class );
 		loginLogoutpageObjects=PageFactory.initElements(driver,LoginLogoutpageObjects.class);
-		
+		loginLogoutpageUtils=PageFactory.initElements(driver,LoginLogoutpageUtils.class);
 	}
-	
+
 	@Test
 	public void logincredits() {
-		
-		
+		loginLogoutpageUtils.applicationURL("Admin", "admin123");
+		customfieldsUtils.selectPim();
+		customfieldsUtils.selectConfiguration();
+		customfieldsUtils.selectCustom();
+		customfieldsUtils.selectAdd();
+		customfieldsUtils.enterFrom("Harish");
+		customfieldsUtils.selectdropdown();
+		customfieldsUtils.selectjob();
+		customfieldsUtils.selectddown();
+		customfieldsUtils.selectdrdown();
+		customfieldsUtils.enteroption("Hari");
+		customfieldsUtils.save();
 	}
-	
-	
 }
