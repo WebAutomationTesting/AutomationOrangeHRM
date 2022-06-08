@@ -24,7 +24,7 @@ public class UsersScripts extends BaseClass {
 
 	@Test
 	public void logindetails() throws InterruptedException {
-		loginLogoutpageUtils.applicationURL("Admin","admin123");
+		loginLogoutpageUtils.applicationCredentials("Admin","admin123");
 		loginLogoutpageUtils.clickOnAdmin();
 		loginLogoutpageUtils.clickOnUsermanagement();
 		loginLogoutpageUtils.clickOnUser();
