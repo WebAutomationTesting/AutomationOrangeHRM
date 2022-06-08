@@ -4,20 +4,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class EmploymentStatusObjects {
+
+	@FindBy(xpath = "//a[text()='Employment Status']")
+	public WebElement employment;
 	
-	@FindBy(xpath = "//input[@name='searchSystemUser[userName]']")
-	public WebElement username;
-	
-	@FindBy(xpath = "//select[@name='searchSystemUser[userType]']")
-	public WebElement userRole;
-	
-	@FindBy(xpath = "//option[text()='Admin']")
-	public WebElement admin;
-	
-	@FindBy(xpath = "//input[@name='searchSystemUser[employeeName][empName]']")
-	public WebElement employeeName;
-	
-	@FindBy(xpath = "//select[@name='searchSystemUser[status]']")
-	public WebElement status;
+	@FindBy(xpath = "//input[@value='Add']")
+	public WebElement add;
+
+	@FindBy(xpath = "//a[text()='Employment Status']")
+	public WebElement employmentStatus;
+
+	@FindBy(xpath = "//input[@name='empStatus[name]']")
+	public WebElement employmentStatusName;
+
+	@FindBy(xpath = "//input[@value='Save']")
+	public WebElement save;
+
+	@FindBy(xpath = "(//input[@type='checkbox'])[4]")
+	public WebElement permanent;
 
 }
