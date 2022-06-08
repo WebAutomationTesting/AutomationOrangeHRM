@@ -44,13 +44,15 @@ public class MyTimeSheetsUtils extends BaseClass{
 		waitUtils.waitTime(1000);
 		seleniumUtills.clickOnElement(myTimeSheetsObjects.selectProject);
 	}
-	
-	public void selectonActivityname(WebElement locator,String value) {
-		//seleniumUtills.selectvisibleText(myTimeSheetsObjects.Activityname,value);
+
+	public void selectonActivityname(int value) {
+		waitUtils.waitTime(1000);
+		seleniumUtills.selectIndexText(myTimeSheetsObjects.Activityname,value);
 	}
 
-	public void enterdate(String date) {
-		seleniumUtills.entertext(myTimeSheetsObjects.currentdate, date);
+	public void enterTimeondate(String name) {
+		seleniumUtills.entertext(myTimeSheetsObjects.wednesday, name);
+
 	}
 
 	public void clickonsave() {
