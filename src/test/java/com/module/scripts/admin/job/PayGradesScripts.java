@@ -23,7 +23,7 @@ public class PayGradesScripts extends BaseClass{
 	}
 	@Test
 	public void jobdetails() {
-		loginLogoutpageUtils.applicationURL("Admin","admin123");
+		loginLogoutpageUtils.applicationCredentials("Admin","admin123");
 		loginLogoutpageUtils.clickOnAdmin();
 		loginLogoutpageUtils.clickOnUsermanagement();
 		payGradesutils.clickOnJob();
