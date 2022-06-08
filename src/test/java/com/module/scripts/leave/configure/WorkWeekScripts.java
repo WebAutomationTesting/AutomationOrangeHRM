@@ -26,7 +26,7 @@ public class WorkWeekScripts extends BaseClass{
 	
 	@Test
 	public void LoginCredentials() {
-		loginLogoutpageUtils.applicationURL("Admin", "admin123");
+		loginLogoutpageUtils.applicationCredentials("Admin", "admin123");
 		workWeekUtils.selectLeave();
 		workWeekUtils.selectConfigure();
 		workWeekUtils.selectWokWeek();
