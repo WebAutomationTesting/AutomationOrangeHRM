@@ -24,8 +24,23 @@ public class CustomFieldsObjects extends BaseClass {
 	@FindBy(xpath="(//input[@type='text'])[1]")
 	public WebElement enter;
 
-	@FindBy(xpath="//select[@class='valid']")
+	@FindBy(xpath="//select[@id='customField_screen']")
+	public WebElement screen;
+	
+	@FindBy(xpath="//select[@name='customField[type]']")
+	public WebElement type;
+	
+	@FindBy(xpath="(//input[@type='button'])[4]")
+	public WebElement save;
+	
+	@FindBy(xpath="//option[@value='job']")
 	public WebElement job;
+	
+	@FindBy(xpath="//option[text()='Drop Down']")
+	public WebElement drop;
+	
+	@FindBy(xpath="(//input[@type='text'])[2]")
+	public WebElement text;
 
 
 
