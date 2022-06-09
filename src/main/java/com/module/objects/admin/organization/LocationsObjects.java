@@ -20,7 +20,7 @@ public class LocationsObjects {
 	@FindBy(xpath = "//a[text()='Organization']")
 	public WebElement Organization;
 	
-	@FindBy(xpath = "//a[text()='Locations']")
+	@FindBy(xpath = "//a[text()='Locations']+")
 	public WebElement location ;
 	
 	@FindBy(xpath = "//input[@name='searchLocation[name]']")
