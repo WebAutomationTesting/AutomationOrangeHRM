@@ -37,5 +37,84 @@ public class WorkWeekUtils extends BaseClass{
 
 	public void selectEdit() {
 		seleniumUtills.clickOnElement(workWeekObjects.edit);
+
 	}
+
+	public void clickOnMonday() {
+		seleniumUtills.clickOnElement(workWeekObjects.monday);
+		
+	}
+
+	public void selectOnmondayFullday() {
+		seleniumUtills.clickOnElement(workWeekObjects.mondayFullday);
+		
+	}
+	
+	public void clickOnTuesday() {
+		seleniumUtills.clickOnElement(workWeekObjects.tuesday);
+
+	}
+
+	public void selectOntuesdayFullday() {
+		seleniumUtills.clickOnElement(workWeekObjects.tuesdayFullday);
+		
+	}
+	
+	public void clickOnWednesday() {
+		seleniumUtills.clickOnElement(workWeekObjects.wednesday);
+
+	}
+
+	public void selectOnwednesdayFullday() {
+		seleniumUtills.clickOnElement(workWeekObjects.wednesdayFullday);
+		
+	}
+	
+	public void clickOnThursday() {
+		seleniumUtills.clickOnElement(workWeekObjects.thursday);
+		
+	}
+	
+	public void selectOnthursdayFullday() {
+		seleniumUtills.clickOnElement(workWeekObjects.thursdayFullday);
+		
+	}
+	
+	public void clickOnFriday() {
+		seleniumUtills.clickOnElement(workWeekObjects.friday);
+		
+	}
+	
+	public void selectOnfridayFullday() {
+		seleniumUtills.clickOnElement(workWeekObjects.fridayFullday);
+		
+	}
+	
+	public void clickOnSaturday() {
+		seleniumUtills.clickOnElement(workWeekObjects.saturday);
+		
+	}
+	
+	public void selectOnsaturdayNonWorkingDay() {
+		seleniumUtills.clickOnElement(workWeekObjects.saturdayNonWorkingDay);
+		
+	}
+	
+	public void clickOnSunday() {
+		seleniumUtills.clickOnElement(workWeekObjects.sunday);
+		
+	}
+	
+	public void selectOnsundayNonWorkingDay() {
+		seleniumUtills.clickOnElement(workWeekObjects.sundayNonWorkingDay);
+	}
+	
+
+	public void clickOnSave() {
+		seleniumUtills.clickOnElement(workWeekObjects.save);
+	}
+	
+	
+	
+	
 }
