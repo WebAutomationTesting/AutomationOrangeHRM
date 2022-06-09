@@ -1,5 +1,12 @@
 package com.module.objects.admin.directory;
 
-public class DirectoryObjects {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.automation.base.BaseClass;
+
+public class DirectoryObjects extends BaseClass {
+
+	
 
 }
