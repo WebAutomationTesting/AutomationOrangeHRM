@@ -25,7 +25,7 @@ public class CustomFieldsScripts extends BaseClass {
 
 	@Test
 	public void logincredits() {
-		loginLogoutpageUtils.applicationCredentials("Admin", "admin123");
+		loginLogoutpageUtils.applicationURL("Admin", "admin123");
 		customfieldsUtils.selectPim();
 		customfieldsUtils.selectConfiguration();
 		customfieldsUtils.selectCustom();
