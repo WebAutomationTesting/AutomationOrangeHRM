@@ -25,17 +25,15 @@ public class CustomFieldsScripts extends BaseClass {
 
 	@Test
 	public void logincredits() {
-		loginLogoutpageUtils.applicationURL("Admin", "admin123");
+		loginLogoutpageUtils.applicationCredentials("Admin", "admin123");
 		customfieldsUtils.selectPim();
 		customfieldsUtils.selectConfiguration();
 		customfieldsUtils.selectCustom();
 		customfieldsUtils.selectAdd();
 		customfieldsUtils.enterFrom("Harish");
-		customfieldsUtils.selectdropdown();
-		customfieldsUtils.selectjob();
-		customfieldsUtils.selectddown();
-		customfieldsUtils.selectdrdown();
-		customfieldsUtils.enteroption("Hari");
+		customfieldsUtils.selectscreen("Job");
+		customfieldsUtils.text("Drop Down");
+		customfieldsUtils.selectoption("Harish");
 		customfieldsUtils.save();
 	}
 }
