@@ -4,45 +4,32 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TrackersObjects {
-	
-	@FindBy(xpath = "//input[@id='txtUsername']")
-	public WebElement username;
-	
-	@FindBy(xpath = "//input[@id='txtPassword']")
-	public WebElement password;
-	
-	@FindBy(xpath = "//input[@id='btnLogin']")
-	public WebElement login;
-	
+
 	@FindBy(xpath = "//a[@id='menu__Performance']")
-	public WebElement Performance;
-	
+	public WebElement performance;
+
 	@FindBy(xpath = "//a[@id='menu_performance_Configure']")
-	public WebElement Configure;
-	
+	public WebElement configure;
+
 	@FindBy(xpath = "//a[text()='Trackers']")
-	public WebElement Trackers;
-	
+	public WebElement trackers;
+
 	@FindBy(xpath = "//input[@id='btnAdd']")
-	public WebElement Add;
-	
-	@FindBy(xpath = "//input[@type='text']")
-	public WebElement TrackerName;
-	
-	@FindBy(xpath = "(//input[@type='text'])[2]")
-	public WebElement EmployeeName;
-	
-	@FindBy(xpath = "//option[@value='48']")
-	public WebElement lacky;
-	
-	@FindBy(xpath = "(//input[@type='button'])[4]")
-	public WebElement ADD;
-	
+	public WebElement add;
+
+	@FindBy(id = "addPerformanceTracker_tracker_name")
+	public WebElement trackerName;
+
+	@FindBy(id = "addPerformanceTracker_employeeName_empName")
+	public WebElement employeeName;
+
+	@FindBy(xpath = "//option[@value='1']")
+	public WebElement orangetest;
+
+	@FindBy(id = "btnAssignEmployee")
+	public WebElement adD;
+
 	@FindBy(xpath = "//input[@id='btnSave']")
-	public WebElement Save;
-	
-	
-	
-	
+	public WebElement sAve;
 
 }
