@@ -25,8 +25,9 @@ public class Locationsscripts extends BaseClass {
 	  locationsutils.selectlocation();
 	  locationsutils.entername("vrpalli");
 	  locationsutils.entercity("nellore");
-	  locationsutils.selectcountry();
-	  locationsutils.selectad();
+	  //locationsutils.selectcountry();
+	  //locationsutils.selectad();
+	  locationsutils.selectCountry("Andorra");
 	  
   }
 }
