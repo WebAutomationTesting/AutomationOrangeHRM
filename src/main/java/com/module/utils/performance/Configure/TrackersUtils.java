@@ -8,32 +8,46 @@ import com.automation.utills.SeleniumUtills;
 import com.module.objects.performance.Configure.TrackersObjects;
 
 public class TrackersUtils extends BaseClass{
-	SeleniumCore seleniumCore;
-	SeleniumUtills seleniumUtills;
-	TrackersObjects trackersObjects;
-	
+
+	public SeleniumCore seleniumCore;
+	public SeleniumUtills seleniumUtills;
+	public TrackersObjects trackersObjects;
+
 	public TrackersUtils() {
-		
 		seleniumUtills=PageFactory.initElements(driver, SeleniumUtills.class);
 		seleniumCore=PageFactory.initElements(driver, SeleniumCore.class);
 		trackersObjects=PageFactory.initElements(driver, TrackersObjects.class);
-	
+
 	}
-	
-	public void applications(String username, String password) {
-		seleniumUtills.entertext(trackersObjects.username, username);
-		seleniumUtills.entertext(trackersObjects.password, password);
-		seleniumUtills.clickOnElement(trackersObjects.login);
-		seleniumUtills.clickOnElement(trackersObjects.Performance);
-		seleniumUtills.clickOnElement(trackersObjects.Configure);
-		seleniumUtills.clickOnElement(trackersObjects.Trackers);
-		seleniumUtills.clickOnElement(trackersObjects.Add);
-		seleniumUtills.entertext(trackersObjects.TrackerName, username);
-		seleniumUtills.entertext(trackersObjects.EmployeeName, username);
-		seleniumUtills.clickOnElement(trackersObjects.lacky);
-		seleniumUtills.clickOnElement(trackersObjects.ADD);
-		seleniumUtills.clickOnElement(trackersObjects.Save);
-		
+
+	public void clickonPerformance() {
+		seleniumUtills.clickOnElement(trackersObjects.performance);
+	}
+	public void clickonConfigure() {
+		seleniumUtills.clickOnElement(trackersObjects.configure);
+	}
+	public void clickonTrackers() {
+		seleniumUtills.clickOnElement(trackersObjects.trackers);
+	}
+	public void clickonAdd() {
+		seleniumUtills.clickOnElement(trackersObjects.add);
+	}
+	public void entertextTrackname(String name) {
+		seleniumUtills.entertext(trackersObjects.trackerName, "");
+	}
+	public void clickonEmployeeName() {
+		seleniumUtills.clickOnElement(trackersObjects.employeeName);
+	}
+	public void clickonOrangeTest() {
+		seleniumUtills.clickOnElement(trackersObjects.orangetest);
+	}
+	public void clickonadD() {
+		seleniumUtills.clickOnElement(trackersObjects.adD);
+	}
+
+	public void clickonElementSave() {
+		seleniumUtills.clickOnElement(trackersObjects.sAve);
+
 	}
 
 }
