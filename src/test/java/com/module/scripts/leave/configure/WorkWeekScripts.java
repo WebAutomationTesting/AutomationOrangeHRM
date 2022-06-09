@@ -31,6 +31,21 @@ public class WorkWeekScripts extends BaseClass{
 		workWeekUtils.selectConfigure();
 		workWeekUtils.selectWokWeek();
 		workWeekUtils.selectEdit();
+		workWeekUtils.clickOnMonday();
+		workWeekUtils.selectOnmondayFullday();
+		workWeekUtils.clickOnTuesday();
+		workWeekUtils.selectOntuesdayFullday();
+		workWeekUtils.clickOnWednesday();
+		workWeekUtils.selectOnwednesdayFullday();
+		workWeekUtils.clickOnThursday();
+		workWeekUtils.selectOnthursdayFullday();
+		workWeekUtils.clickOnFriday();
+		workWeekUtils.selectOnfridayFullday();
+		workWeekUtils.clickOnSaturday();
+		workWeekUtils.selectOnsaturdayNonWorkingDay();
+		workWeekUtils.clickOnSunday();
+		workWeekUtils.selectOnsaturdayNonWorkingDay();
+		workWeekUtils.clickOnSave();
 		
 	}
 
