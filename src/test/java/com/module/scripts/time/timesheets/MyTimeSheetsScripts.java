@@ -29,7 +29,6 @@ public class MyTimeSheetsScripts extends BaseClass{
 		myTimeSheetsUtils.clickOnEditButton();
 		myTimeSheetsUtils.enterProjectName("Global Corp and Co - Global Software phase - 1");
 		myTimeSheetsUtils.selectonActivityname(2);
-		
 		myTimeSheetsUtils.enterTimeondate("7");
 		myTimeSheetsUtils.clickonsave();
 	}
