@@ -42,12 +42,9 @@ public class Locationsutils  extends BaseClass{
 		seleniumUtills.clickOnElement(locationobjects.ad);
 	}
 	
-	
-	
-
-	
-	
- 
+	public void selectCountry(String countryName) {
+		seleniumUtills.selectvisubleText(locationobjects.country, countryName);
+	}
 	
 
  
