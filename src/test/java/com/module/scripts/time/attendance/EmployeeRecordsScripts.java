@@ -18,12 +18,12 @@ public class EmployeeRecordsScripts extends BaseClass{
 	public void load() {
 		loginLogoutpageUtils=PageFactory.initElements(driver, LoginLogoutpageUtils.class);
 		employeeRecordsUtils=PageFactory.initElements(driver, EmployeeRecordsUtils.class);
-        waitUtils=PageFactory.initElements(driver,WaitUtils.class);
+		waitUtils=PageFactory.initElements(driver,WaitUtils.class);
 	}
 	@Test
 	public void Employeerecorddetails() {
 		loginLogoutpageUtils.applicationCredentials("Admin","admin123");
 		waitUtils.waitTime(500);
 
-}
+	}
 }
