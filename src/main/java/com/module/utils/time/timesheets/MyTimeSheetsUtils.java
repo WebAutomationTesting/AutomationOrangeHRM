@@ -1,6 +1,6 @@
 package com.module.utils.time.timesheets;
 
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.PageFactory;
 
 import com.automation.base.BaseClass;
@@ -50,8 +50,8 @@ public class MyTimeSheetsUtils extends BaseClass{
 		seleniumUtills.selectIndexText(myTimeSheetsObjects.Activityname,value);
 	}
 
-	public void enterTimeondate(String name) {
-		seleniumUtills.entertext(myTimeSheetsObjects.wednesday, name);
+	public void enterTimeondate(String date) {
+		seleniumUtills.entertext(myTimeSheetsObjects.wednesday, date);
 
 	}
 
