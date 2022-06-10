@@ -9,7 +9,6 @@ import com.automation.utills.WaitUtils;
 import com.module.objects.admin.job.JobCategoriesObjects;
 
 public class JobCategoriesUtils extends BaseClass{
-	
 	public SeleniumUtills seleniumUtills;
 	public SeleniumCore seleniumCore;
 	public WaitUtils waitUtils;
@@ -27,15 +26,13 @@ public class JobCategoriesUtils extends BaseClass{
 	}
 	
 	public void addCategoriesDetails(String categoryName) {
-		seleniumUtills.entertext(jobCategoriesobjects.categoryName,categoryName);
-		
+		seleniumUtills.entertext(jobCategoriesobjects.categoryName,categoryName);	
 	}
+	
 	public void clickOnLogOut() {
 		seleniumUtills.clickOnElement(jobCategoriesobjects.logout);
 	}
 	public void clickOnWelcome() {
 		seleniumUtills.clickOnElement(jobCategoriesobjects.welcomeButton);
-	}
-	
-	
+	}	
 }
