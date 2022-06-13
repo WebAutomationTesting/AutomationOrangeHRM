@@ -4,6 +4,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class EmploymentStatusObjects {
+	
+	@FindBy(id = "menu_admin_viewAdminModule")
+	public WebElement admin;
+	
+	@FindBy(id = "menu_admin_Job")
+	public WebElement job;
 
 	@FindBy(xpath = "//a[text()='Employment Status']")
 	public WebElement employment;
