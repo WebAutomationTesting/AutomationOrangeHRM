@@ -5,21 +5,18 @@ import org.openqa.selenium.support.PageFactory;
 import com.automation.base.BaseClass;
 import com.automation.utills.SeleniumCore;
 import com.automation.utills.SeleniumUtills;
-import com.automation.utills.WaitUtils;
 import com.module.objects.homepage.LoginLogoutpageObjects;
 
 public class LoginLogoutpageUtils extends BaseClass{
 
 	public SeleniumUtills seleniumUtills;
 	public SeleniumCore seleniumCore;
-	WaitUtils waitUtils;
 	public LoginLogoutpageObjects loginLogoutpageObject;
 
 
 	public LoginLogoutpageUtils() {
 		seleniumUtills=PageFactory.initElements(driver,SeleniumUtills.class);
 		seleniumCore=PageFactory.initElements(driver,SeleniumCore.class);
-		waitUtils=PageFactory.initElements(driver, WaitUtils.class);
 		loginLogoutpageObject=PageFactory.initElements(driver,LoginLogoutpageObjects.class);
 	}
 
@@ -44,9 +41,13 @@ public class LoginLogoutpageUtils extends BaseClass{
 	
 	public void applicationlogout() {
 		seleniumUtills.clickOnElement(loginLogoutpageObject.tologout);
-		waitUtils.waitTime(500);
 		seleniumUtills.clickOnElement(loginLogoutpageObject.logout);   	
 	}
-
+	
+	public void clickOnJob() {
+		seleniumUtills.clickOnElement(loginLogoutpageObject.job);
+	}
 
 }
+
+
