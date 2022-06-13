@@ -9,7 +9,7 @@ import com.module.objects.admin.job.EmploymentStatusObjects;
 
 
 public class EmploymentStatusUtils extends BaseClass {
-	
+
 	public SeleniumUtills seleniumUtills;
 	public SeleniumCore seleniumCore;
 	public EmploymentStatusObjects employmentStatusObjects;
@@ -19,29 +19,35 @@ public class EmploymentStatusUtils extends BaseClass {
 		seleniumCore=PageFactory.initElements(driver,SeleniumCore.class);
 		employmentStatusObjects=PageFactory.initElements(driver,EmploymentStatusObjects.class);
 	}
+	public void clickOnAdmin() {
+		seleniumUtills.clickOnElement(employmentStatusObjects.admin);
+	}
 	
+	public void clickOnJob() {
+		seleniumUtills.clickOnElement(employmentStatusObjects.job);
+	}
 	public void clickOnEmployment() {
 		seleniumUtills.clickOnElement(employmentStatusObjects.employment);
 	}
-	
+
 	public void clickOnEmploymentStatus() {
 		seleniumUtills.clickOnElement(employmentStatusObjects.employmentStatus);
 	}
-	
+
 	public void enterEmploymentStatusName(String employmentStatusName) {
 		seleniumUtills.entertext(employmentStatusObjects.employmentStatusName,employmentStatusName);
 	}
-	
+
 	public void clickOnSave() {
 		seleniumUtills.clickOnElement(employmentStatusObjects.save);
 	}
-	
+
 	public void clickOnPermanent() {
 		seleniumUtills.clickOnElement(employmentStatusObjects.permanent);
 	}
-	
+
 	public void clickOnAdd() {
 		seleniumUtills.clickOnElement(employmentStatusObjects.add);
 	}
-	
+
 }
