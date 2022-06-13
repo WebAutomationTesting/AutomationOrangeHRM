@@ -26,6 +26,4 @@ public class CorporateBrandingObjects {
 	@FindBy(id="btnSave")
 	public WebElement publish;
 
-
-
 }
