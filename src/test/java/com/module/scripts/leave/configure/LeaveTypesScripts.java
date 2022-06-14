@@ -26,7 +26,7 @@ public class LeaveTypesScripts extends BaseClass{
 	
 	@Test
 	public void LoginCredentials() {
-		loginLogoutpageUtils.applicationURL("Admin","admin123");
+		loginLogoutpageUtils.applicationCredentials("Admin","admin123");
 		leaveTypesUtils.selectLeave();
 		leaveTypesUtils.selectConfigure();
 		leaveTypesUtils.selectLeaveTypes();
