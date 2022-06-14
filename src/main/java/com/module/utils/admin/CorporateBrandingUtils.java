@@ -42,5 +42,6 @@ public class CorporateBrandingUtils extends BaseClass{
 	public void clickOnPublish() {
 		seleniumUtills.clickOnElement(corporateBrandingObjects.publish);
 	}
+	
 
 }
