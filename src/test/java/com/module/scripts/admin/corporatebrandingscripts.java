@@ -31,10 +31,8 @@ public class corporatebrandingscripts extends BaseClass {
 		corporateBrandingUtils.clickOnChooseColor();
 		corporateBrandingUtils.clickOnChoose();
 		corporateBrandingUtils.clickOnPublish();
-
+		corporateBrandingUtils.clickOnPublish();
 
 	}
-
-
-
+	
 }
