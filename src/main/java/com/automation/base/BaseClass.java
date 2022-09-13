@@ -18,7 +18,6 @@ public class BaseClass {
     public static Properties locator;
     public static String currDir=System.getProperty("user.dir");
 	
-  
     @BeforeSuite
 	public void initbrowser() throws IOException {
 		
